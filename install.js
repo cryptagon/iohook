@@ -29,6 +29,11 @@ function install(runtime, abi, platform, arch, cb) {
   const pkgVersion = pkg.version;
   const currentPlatform = 'iohook-v' + pkgVersion + '-' + essential;
 
+  if (runtime != 'electron') {
+    console.log('Aborting install for non-electron runtime');
+    return
+  }
+
   console.log('Downloading prebuild for platform:', currentPlatform);
   let downloadUrl =
     'https://github.com/cryptagon/iohook/releases/download/v' +
