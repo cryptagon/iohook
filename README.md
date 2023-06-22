@@ -8,6 +8,12 @@
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/iohookjs/Lobby)
 [![Issues](https://img.shields.io/github/issues-raw/wilix-team/iohook)](https://github.com/wilix-team/iohook/issues)
 
+PREBUILD INSTRUCTIONS:
+
+`npx prebuild -t 21.4.4 -r electron -a 109`
+
+upload it.
+
 ## About
 
 Node.js global native keyboard and mouse listener.
